@@ -1,0 +1,63 @@
+{
+  "name": "fullstack-next",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "docker": "docker-compose up -d",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prepare": "husky install",
+    "eslint": "eslint --ext .js,.jsx,.ts,.tsx --fix .",
+    "tsc": "tsc --noEmit",
+    "studio": "prisma studio",
+    "pre-commit": "lint-staged"
+  },
+  "dependencies": {
+    "@next-auth/prisma-adapter": "^0.5.2-next.19",
+    "@prisma/client": "^3.5.0",
+    "@sentry/nextjs": "^6.15.0",
+    "@stripe/react-stripe-js": "^1.6.0",
+    "@stripe/stripe-js": "^1.21.1",
+    "@tailwindcss/forms": "^0.3.4",
+    "next": "^12.0.4",
+    "next-stripe": "^1.0.0-beta.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-query": "^3.33.1",
+    "stripe": "^8.190.0",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "@headlessui/react": "^1.4.2",
+    "@heroicons/react": "^1.0.5",
+    "@tailwindcss/aspect-ratio": "^0.3.0",
+    "@types/micro": "^7.3.6",
+    "@types/micro-cors": "^0.1.2",
+    "@types/node": "16.11.7",
+    "@types/react": "17.0.35",
+    "@types/stripe": "^8.0.417",
+    "autoprefixer": "^10.4.0",
+    "eslint": "^7.32.0",
+    "eslint-config-next": "^12.0.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.2",
+    "postcss": "^8.3.11",
+    "prettier": "^2.5.0",
+    "tailwindcss": "^2.2.19",
+    "typescript": "4.5.2"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "npx prettier --write"
+    ],
+    "*.{json,md,yaml,yml,scss,css}": [
+      "npx prettier --write"
+    ]
+  }
+}
