@@ -2,19 +2,16 @@
 
 <br>
 
-<img src="https://user-images.githubusercontent.com/46969484/138513380-92dd8778-72b8-46ab-85da-5d3ea4ba2e83.png" width="100%" />
+<img src="https://user-images.githubusercontent.com/46969484/143662399-baaa3db0-12fa-4455-9c0c-56b7c5f96552.png" width="100%" />
 
 <br>
 
 <br>
 
+  Fullstack Next.js Ecommerce
+  
 </h1>
 
-## Overview 🎉
-
-Personal blog and portfolio.
-
-🇵🇱 Read the whole story behind this project - https://frontlive.pl/blog/nowy-frontlive
 
 ## Technologies 🔧
 
