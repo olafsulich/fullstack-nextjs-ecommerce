@@ -58,6 +58,7 @@
     ],
     "*.{json,md,yaml,yml,scss,css}": [
       "npx prettier --write"
-    ]
+    ],
+    "*.js": "eslint --cache --fix"
   }
 }
