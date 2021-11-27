@@ -21,7 +21,6 @@
     "@stripe/stripe-js": "^1.21.1",
     "@tailwindcss/forms": "^0.3.4",
     "next": "^12.0.4",
-    "next-stripe": "^1.0.0-beta.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-query": "^3.33.1",
