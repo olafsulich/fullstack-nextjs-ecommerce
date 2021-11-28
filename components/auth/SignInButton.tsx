@@ -1,7 +1,8 @@
-import { signIn } from "next-auth/react";
+import { useAuth } from './hooks/useAuth';
 
 export const SignInButton = () => {
-  const handleSignIn = () => signIn("github");
+  const { signIn } = useAuth();
+  const handleSignIn = () => signIn('github');
 
   return (
     <button

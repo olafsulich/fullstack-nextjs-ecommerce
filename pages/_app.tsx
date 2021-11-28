@@ -1,13 +1,12 @@
-import { useState } from "react";
-import type { AppProps } from "next/app";
-import { Hydrate, QueryClient, QueryClientProvider } from "react-query";
-import { ReactQueryDevtools } from "react-query/devtools";
-import { SessionProvider } from "next-auth/react";
-import "tailwindcss/tailwind.css";
-import { CartProvider } from "../components/cart/context/cartContext";
-import { getEnv } from "../utils/env";
+import { useState } from 'react';
+import type { AppProps } from 'next/app';
+import { Hydrate, QueryClient, QueryClientProvider } from 'react-query';
+import { ReactQueryDevtools } from 'react-query/devtools';
+import { SessionProvider } from 'next-auth/react';
+import 'tailwindcss/tailwind.css';
+import { CartProvider } from '../components/cart/context/cartContext';
 
-function App({ Component, pageProps, err }: AppProps & { err: Error }) {
+export default function App({ Component, pageProps, err }: AppProps & { err: Error }) {
   const [queryClient] = useState(() => new QueryClient());
 
   return (
@@ -23,5 +22,3 @@ function App({ Component, pageProps, err }: AppProps & { err: Error }) {
     </SessionProvider>
   );
 }
-
-export default App;

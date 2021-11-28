@@ -2,8 +2,6 @@ import { Dispatch, Fragment, SetStateAction } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { XIcon } from "@heroicons/react/outline";
 import { CartItems } from "./CartItems";
-import initStripe from "../../config/initStripe";
-import { fetcher } from "../../utils/fetcher";
 import { useCart } from "./hooks/useCart";
 import { useCheckout } from "./hooks/useCheckout";
 

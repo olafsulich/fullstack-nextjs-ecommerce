@@ -1,12 +1,6 @@
-import Document, {
-  Main,
-  Head,
-  Html,
-  NextScript,
-  DocumentContext,
-} from "next/document";
+import Document, { Head, Main, Html, NextScript, DocumentContext } from 'next/document';
 
-class MyDocument extends Document {
+export default class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
     const initialProps = await Document.getInitialProps(ctx);
 
@@ -30,5 +24,3 @@ class MyDocument extends Document {
     );
   }
 }
-
-export default MyDocument;

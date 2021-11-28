@@ -3,8 +3,8 @@ import { SignInButton } from "../../components/auth/SignInButton";
 
 export default function SignIn() {
   return (
-    <Layout>
+<Layout>
       <SignInButton />
-    </Layout>
+</Layout>
   );
 }

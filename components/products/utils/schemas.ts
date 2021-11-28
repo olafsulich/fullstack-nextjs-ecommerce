@@ -1,6 +1,5 @@
-import * as y from "yup";
-import type Prisma from "@prisma/client";
-import type { Stripe } from "stripe";
+import * as y from 'yup';
+import type Prisma from '@prisma/client';
 
 export const productSchema: y.SchemaOf<Prisma.Product> = y.object().shape({
   id: y.string().required(),
@@ -11,5 +10,3 @@ export const productSchema: y.SchemaOf<Prisma.Product> = y.object().shape({
 });
 
 export const productsSchema = y.array(productSchema);
-
-

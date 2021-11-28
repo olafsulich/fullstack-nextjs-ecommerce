@@ -1,20 +1,20 @@
-import { NextApiRequest, NextApiResponse } from "next";
-import { PrismaClient } from "@prisma/client";
-import { NextRequest } from "next/server";
+import { NextApiRequest, NextApiResponse } from 'next';
+import { PrismaClient } from '@prisma/client';
 
-export default async function handler(
-  req: NextApiRequest,
-  res: NextApiResponse
-) {
-  const prisma = new PrismaClient();
+export default async (req: NextApiRequest, res: NextApiResponse) => {
+  try {
+    const prisma = new PrismaClient();
 
-  const products = await prisma.product.findMany();
+    const products = await prisma.product.findMany();
 
-  if (products && products.length > 0) {
-    res.status(200).json(products);
-    res.end();
-  } else {
+    if (products.length) {
+      res.status(200).json(products);
+      res.end();
+    } else {
+      res.status(404);
+      res.end();
+    }
+  } catch {
     res.status(500);
-    res.end();
   }
-}
+};
