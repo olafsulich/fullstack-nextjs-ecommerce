@@ -10,7 +10,7 @@ type NameToType = {
   readonly GITHUB_ID: string;
   readonly SECRET: string;
   readonly SENTRY_DSN: string;
-  readonly NEXTAUTH_CALLBACK_URL: string;
+  readonly NEXT_PUBLIC_NEXTAUTH_CALLBACK_URL: string;
   readonly NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY: string;
   readonly STRIPE_SECRET_KEY: string;
   readonly NEXT_PUBLIC_STRIPE_SUCCESS_REDIRECT_URL: string;
