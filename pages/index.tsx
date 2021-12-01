@@ -25,7 +25,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   if (!session) {
     return {
       redirect: {
-        destination: getEnv('NEXT_PUBLIC_NEXTAUTH_CALLBACK_URL'),
+        destination: getEnv('NEXTAUTH_CALLBACK_URL'),
         permanent: false,
       },
       props: {
