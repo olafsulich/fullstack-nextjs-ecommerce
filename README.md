@@ -8,10 +8,9 @@
 
 <br>
 
-  Fullstack Next.js Ecommerce
-  
-</h1>
+Fullstack Next.js E-commerce
 
+</h1>
 
 ## Technologies 🔧
 
@@ -28,7 +27,6 @@
 ## Screenshots 📸
 
 <br>
-
 
 <img src="https://user-images.githubusercontent.com/46969484/143662639-de569e93-917c-40d8-b4ff-efbd6e6e82f3.png" width="100%" />
 
